@@ -60,6 +60,7 @@ h2::after{
 /* ------------------------ Menu bar ------------------------ */
 
 .container {
+    padding:0px;
     padding-top: 56px !important;
 }
 .navbar{
@@ -151,7 +152,15 @@ h1{
 }
 /* ------------------------ Section 2 About Us ------------------------ */
 
-.our_services_image {
+
+
+.back-img{
+    background-image: url(../images/Frame.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+/* .our_services_image {
     width: 56rem !important;
     position: absolute;
     left: -10%;
@@ -162,7 +171,7 @@ h1{
 
 .our_services_image img {
     width: 100%;
-}
+} */
 
 .services-card{
     margin-top: 80px;
@@ -313,6 +322,12 @@ footer p, footer a{
 
 
 @media screen and (max-width:768px){
+
+ .header-content h1, .header-content p{
+        width: 100%;
+        text-align: center;
+    } 
+    
     /* All buttons */
     .btn{
         display: block;
@@ -330,11 +345,11 @@ footer p, footer a{
 
     /* Remove hover effect from menu list in small screen */ 
     .collapse ul li:hover::after{
-        width:0%;
+        width: 0%;
     }
     /* Cards in small screen*/
     .card{
-        width: 28rem !important;
+        width: 21rem !important;
         display:block;
         margin: 15px auto;
         text-align: center;
@@ -352,6 +367,10 @@ footer p, footer a{
 
     .col-sm-12 p{
         line-height: 32px;
+    }
+
+    .our_customers{
+        width: 21rem;
     }
 }
 
