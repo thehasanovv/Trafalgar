@@ -186,7 +186,7 @@ h1{
 
 .services-card img {
     margin-top: 3.37rem;
-    padding-left: 2.3rem;
+
 }
 
 .card-title{
@@ -196,7 +196,7 @@ h1{
     font-size:24px;
     line-height: 56px;
     font-style: normal;
-    padding-left: 2.3rem;
+
 }
 
 .card-text{
@@ -205,7 +205,7 @@ h1{
     font-size:16px;
     line-height: 28px;
     font-style: normal;
-    padding-left: 2.3rem;
+
 }
 
 .services-card:hover{
@@ -276,7 +276,6 @@ h1{
     border-top-right-radius: 20px;
 }
 .latest-card a{
-    padding-left: 2.3rem;
     text-decoration: none;
     font-size: 17px;
     font-weight: 600;
@@ -318,10 +317,23 @@ footer p, footer a{
     h1{
         text-align: center;
     }
+
+    .latest-card{
+        width: 60% !important;
+        text-align: center;
+    }
+
+/*     .row-card{
+        justify-content: space-between !important;
+    } */
 }
 
 
 @media screen and (max-width:768px){
+
+    .latest-card{
+        width: 100% !important;
+    }
 
  .header-content h1, .header-content p{
         width: 100%;
@@ -371,6 +383,12 @@ footer p, footer a{
 
     .our_customers{
         width: 21rem;
+    }
+    h2{
+        text-align: center;
+    }
+    h2::after{
+        margin: 8px auto;
     }
 }
 
